@@ -1,0 +1,44 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Zorg ervoor dat de achtergrond niet uit de pagina schuift */
+  height: 100%;
+  background-color: black;
+}
+
+#backgroundCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Zet het canvas achter de andere inhoud */
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparante achtergrond voor de header */
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 1; /* Zorg ervoor dat de header boven de achtergrond komt */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Zorg ervoor dat de andere content boven de achtergrond komt */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px; /* Zorg ervoor dat de content niet onder de header komt */
+}

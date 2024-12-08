@@ -1,1 +1,1 @@
-Dit is een stocks concept maar ik had het pas de laatste 30 minuten gevonden dus nog helemaal niet afgewerkt het gebruikt noise voor de grafiek
+Een gamble site 
